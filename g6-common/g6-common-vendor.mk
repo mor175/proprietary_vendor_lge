@@ -27,14 +27,35 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/etc/camera/selfie/8_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/8_selfie.dat \
     vendor/lge/g6-common/proprietary/vendor/etc/camera/selfie/9_selfie.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/selfie/9_selfie.dat \
     vendor/lge/g6-common/proprietary/etc/init/thermalservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/thermalservice.rc \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.bootproperty-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.bootproperty-V1.0-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.configstore-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.configstore-V1.0-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.platform-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.platform-V1.0-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.platform-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.platform-V1.1-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.property-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.property-V1.0-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.property-V1.1-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.property-V1.1-java.jar \
+    vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.property-V1.2-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.property-V1.2-java.jar \
     vendor/lge/g6-common/proprietary/framework/vendor.lge.hardware.thermal-V1.0-java.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/vendor.lge.hardware.thermal-V1.0-java.jar \
     vendor/lge/g6-common/proprietary/vendor/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
     vendor/lge/g6-common/proprietary/lib/libdovi.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdovi.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.bootproperty@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.bootproperty@1.0.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.configstore@1.0.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.platform@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.platform@1.0.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.platform@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.platform@1.1.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.property@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.property@1.0.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.property@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.property@1.1.so \
+    vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.property@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.property@1.2.so \
     vendor/lge/g6-common/proprietary/lib/vendor.lge.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.lge.hardware.thermal@1.0.so \
     vendor/lge/g6-common/proprietary/lib64/android.hardware.thermal@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hardware.thermal@1.1.so \
     vendor/lge/g6-common/proprietary/lib64/libdovi.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdovi.so \
     vendor/lge/g6-common/proprietary/lib64/libthermalcallback.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libthermalcallback.so \
     vendor/lge/g6-common/proprietary/lib64/libthermalservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libthermalservice.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.bootproperty@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.bootproperty@1.0.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.configstore@1.0.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.platform@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.platform@1.0.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.platform@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.platform@1.1.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.property@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.property@1.0.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.property@1.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.property@1.1.so \
+    vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.property@1.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.property@1.2.so \
     vendor/lge/g6-common/proprietary/lib64/vendor.lge.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.lge.hardware.thermal@1.0.so \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_LGITAct_ICG1020S_rev10_S_data1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_LGITAct_ICG1020S_rev10_S_data1.bin \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_LGITAct_ICG1020S_rev10_S_data2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_LGITAct_ICG1020S_rev10_S_data2.bin \
@@ -55,6 +76,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data1.bin \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data2.bin \
     vendor/lge/g6-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
+    vendor/lge/g6-common/proprietary/vendor/bin/hw/vendor.lge.hardware.bootproperty@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.bootproperty@1.0-service \
+    vendor/lge/g6-common/proprietary/vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.configstore@1.0-service \
+    vendor/lge/g6-common/proprietary/vendor/bin/hw/vendor.lge.hardware.platform@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.platform@1.1-service \
+    vendor/lge/g6-common/proprietary/vendor/bin/hw/vendor.lge.hardware.property@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.property@1.2-service \
     vendor/lge/g6-common/proprietary/vendor/bin/hw/vendor.lge.hardware.thermal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.lge.hardware.thermal@1.0-service \
     vendor/lge/g6-common/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/lge/g6-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
@@ -67,6 +92,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Headset_cal.acdb \
     vendor/lge/g6-common/proprietary/vendor/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Speaker_cal.acdb \
     vendor/lge/g6-common/proprietary/vendor/etc/dolby_vision.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dolby_vision.cfg \
+    vendor/lge/g6-common/proprietary/vendor/etc/init/init.lge.bootproperty_trigger.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.lge.bootproperty_trigger.rc \
+    vendor/lge/g6-common/proprietary/vendor/etc/init/vendor.lge.hardware.bootproperty@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.bootproperty@1.0-service.rc \
+    vendor/lge/g6-common/proprietary/vendor/etc/init/vendor.lge.hardware.configstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.configstore@1.0-service.rc \
+    vendor/lge/g6-common/proprietary/vendor/etc/init/vendor.lge.hardware.platform@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.platform@1.1-service.rc \
+    vendor/lge/g6-common/proprietary/vendor/etc/init/vendor.lge.hardware.property@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.property@1.2-service.rc \
     vendor/lge/g6-common/proprietary/vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.lge.hardware.thermal@1.0-service.rc \
     vendor/lge/g6-common/proprietary/vendor/etc/qdcm_calib_data_SW49408_1440_2880_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_SW49408_1440_2880_cmd_mode_dsc_dsi_panel.xml \
     vendor/lge/g6-common/proprietary/vendor/etc/thermal-engine-8996.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-8996.conf \
@@ -75,6 +105,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/lib/hw/camera.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8996.so \
     vendor/lge/g6-common/proprietary/vendor/lib/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.msm8996.so \
     vendor/lge/g6-common/proprietary/vendor/lib/hw/thermal.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.msm8996.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/hw/vendor.lge.hardware.bootproperty@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.bootproperty@1.0-impl.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/hw/vendor.lge.hardware.property@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.lge.hardware.property@1.2-impl.so \
     vendor/lge/g6-common/proprietary/vendor/lib/libAutoContrast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAutoContrast.so \
     vendor/lge/g6-common/proprietary/vendor/lib/libCmcPdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCmcPdaf.so \
     vendor/lge/g6-common/proprietary/vendor/lib/libSJFingerDetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSJFingerDetect.so \
@@ -715,6 +747,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/lge/g6-common/proprietary/vendor/lib64/hw/fingerprint.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.msm8996.so \
     vendor/lge/g6-common/proprietary/vendor/lib64/hw/thermal.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal.msm8996.so \
+    vendor/lge/g6-common/proprietary/vendor/lib64/hw/vendor.lge.hardware.bootproperty@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.bootproperty@1.0-impl.so \
+    vendor/lge/g6-common/proprietary/vendor/lib64/hw/vendor.lge.hardware.property@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.lge.hardware.property@1.2-impl.so \
     vendor/lge/g6-common/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_frame_algorithm.so \
     vendor/lge/g6-common/proprietary/vendor/lib64/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_is.so \
     vendor/lge/g6-common/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera2_stats_algorithm.so \
