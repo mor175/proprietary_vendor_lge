@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev7_S_data2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev7_S_data2.bin \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data1.bin \
     vendor/lge/g6-common/proprietary/vendor/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bu24235_dl_program_Lucy_MTMAct_ICG1020S_rev8_S_data2.bin \
+    vendor/lge/g6-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/lge/g6-common/proprietary/vendor/bin/mm-qcamera-app:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-app \
     vendor/lge/g6-common/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/lge/g6-common/proprietary/vendor/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/Bluetooth_cal.acdb \
