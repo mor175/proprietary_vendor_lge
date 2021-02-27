@@ -109,6 +109,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile6.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile6.xml \
     vendor/lge/msm8996-common/proprietary/etc/cne/wqeclient/profile7.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/wqeclient/profile7.xml \
     vendor/lge/msm8996-common/proprietary/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/wfdservice.rc \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/cneapiclient.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/cneapiclient.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml \
@@ -118,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/telephonyservice.xml \
     vendor/lge/msm8996-common/proprietary/etc/wfdconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfig.xml \
     vendor/lge/msm8996-common/proprietary/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/wfdconfigsink.xml \
+    vendor/lge/msm8996-common/proprietary/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/audiosphere.jar \
     vendor/lge/msm8996-common/proprietary/framework/cneapiclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/cneapiclient.jar \
     vendor/lge/msm8996-common/proprietary/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.jar \
     vendor/lge/msm8996-common/proprietary/vendor/framework/vendor.lge.hardware.sysnode-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/vendor.lge.hardware.sysnode-V1.0-java.jar \
@@ -130,6 +132,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/lib-imsvtutils.so \
     vendor/lge/msm8996-common/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/lge/msm8996-common/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+    vendor/lge/msm8996-common/proprietary/lib/libaudioroute.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaudioroute.so \
     vendor/lge/msm8996-common/proprietary/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdiag_system.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimscamera_jni.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsmedia_jni.so \
@@ -137,7 +140,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/lge/msm8996-common/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
     vendor/lge/msm8996-common/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
+    vendor/lge/msm8996-common/proprietary/lib/libqct_resampler.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqct_resampler.so \
     vendor/lge/msm8996-common/proprietary/lib/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/librcc.so \
+    vendor/lge/msm8996-common/proprietary/lib/libsymphony-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsymphony-1.1.3.so \
+    vendor/lge/msm8996-common/proprietary/lib/libsymphony-cpu-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsymphony-cpu-1.1.3.so \
+    vendor/lge/msm8996-common/proprietary/lib/libsymphonypower-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsymphonypower-1.1.3.so \
     vendor/lge/msm8996-common/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
     vendor/lge/msm8996-common/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
     vendor/lge/msm8996-common/proprietary/lib/libwfdcodecv4l2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdcodecv4l2.so \
@@ -155,8 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsinkinterface.so \
     vendor/lge/msm8996-common/proprietary/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrc.so \
     vendor/lge/msm8996-common/proprietary/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfduibcsrcinterface.so \
-    vendor/lge/msm8996-common/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
-    vendor/lge/msm8996-common/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:$(TARGET_COPY_OUT_SYSTEM)/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/vendor.lge.hardware.sysnode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.lge.hardware.sysnode@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.gnss@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.imsrtpservice@1.0.so \
@@ -167,11 +172,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvt.so \
     vendor/lge/msm8996-common/proprietary/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtextutils.so \
     vendor/lge/msm8996-common/proprietary/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/lib-imsvtutils.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libaudioroute.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libaudioroute.so \
     vendor/lge/msm8996-common/proprietary/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdiag_system.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimscamera_jni.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimsmedia_jni.so \
     vendor/lge/msm8996-common/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
     vendor/lge/msm8996-common/proprietary/lib64/librcc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/librcc.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libsymphony-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsymphony-1.1.3.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libsymphony-cpu-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsymphony-cpu-1.1.3.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libsymphonypower-1.1.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsymphonypower-1.1.3.so \
     vendor/lge/msm8996-common/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/lge/msm8996-common/proprietary/lib64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdnative.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.lge.hardware.sysnode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.lge.hardware.sysnode@1.0.so \
@@ -285,7 +294,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbmapper.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
@@ -297,10 +305,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbccQTI.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libcsd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcsd-client.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdts-eagle-shared.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libeaglecore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeaglecore.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libfeedbackhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeedbackhandler.so \
@@ -310,7 +322,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
@@ -343,8 +354,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphony-1.1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.1.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphony-1.1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.2.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphony-1.1.4.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphonypower-1.1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.1.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphonypower-1.1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.2.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsymphonypower-1.1.4.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtime_genoff.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
@@ -353,6 +369,22 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdhdcpcp.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdmmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmmservice.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libwfdmodulehdcpsession.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdmodulehdcpsession.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/AlacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/AlacDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/ApeDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/ApeDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/AudioSphereModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/AudioSphereModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/DTS_HPX_MODULE.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/DTS_HPX_MODULE.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/DolbyMobileModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/DolbyMobileModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/DolbySurroundModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/DolbySurroundModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/EtsiEaacPlusEncAndCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/EtsiEaacPlusEncAndCmnModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/FlacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/FlacDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/HeaacDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/HeaacDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/SAPlusCmnModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/SAPlusCmnModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/SrsTruMediaModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/SrsTruMediaModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/VorbisDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/VorbisDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/WmaProDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/WmaProDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/WmaStdDecoderModule.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/WmaStdDecoderModule.so.1 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/fastrpc_shell_0:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fastrpc_shell_0 \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/fluence_voiceplus_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/fluence_voiceplus_module.so.1 \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_fd_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_add_constant.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libadsp_hvx_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_hvx_skel.so \
@@ -364,15 +396,33 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvadsp_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libsysmon_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsysmon_skel.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_frc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libvpp_svc_skel.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/mmecns_module.so.1:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/mmecns_module.so.1 \
     vendor/lge/msm8996-common/proprietary/vendor/lib/rfsa/adsp/us-syncproximity.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/us-syncproximity.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensor_calibrate.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdownmix.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libeagle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeagle.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libeffectproxy.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libldnhncr.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/liblgeffectwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/liblgeffectwrapper.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvoiceprocessing.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libreverbwrapper.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvisualizer.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/vendor.qti.gnss@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.gnss@1.0_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
@@ -446,7 +496,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/lib_drplugin_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_drplugin_server.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib64/libacdbmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbmapper.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
@@ -457,11 +506,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libbccQTI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbccQTI.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libcsd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcsd-client.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
@@ -470,6 +521,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdrplugin_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrplugin_client.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libeaglecore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeaglecore.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libevent_observer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_observer.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvadsp_stub.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
@@ -494,7 +547,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
@@ -532,8 +584,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libsmemlog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsmemlog.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libsymphony-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphony-1.1.4.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libsymphonypower-1.1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsymphonypower-1.1.4.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libtinycompress_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libux.so \
@@ -546,9 +601,23 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_ulp_adaptor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libbundlewrapper.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libdownmix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdownmix.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libeagle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeagle.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libeffectproxy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libeffectproxy.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libldnhncr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libldnhncr.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/liblgeffectwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/liblgeffectwrapper.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
-    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcompostprocbundle.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvisualizer.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcomvoiceprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcomvoiceprocessing.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@1.0.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
@@ -574,14 +643,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gatekeeper.msm8996 \
     keystore.msm8996 \
-    libaudio_log_utils \
     libdsi_netctrl \
     libgpustats \
     libqmi_cci \
     libqmi_common_so \
     libqmiservices \
     libsdm-disp-vndapis \
-    libqct_resampler \
     libloc_api_v02 \
     QtiTelephonyService \
     CNEService \
